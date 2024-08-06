@@ -1,3 +1,7 @@
+![DevOpsGuru Banner](https://example.com/path/to/your/image.jpg)
+
+# 🎉 Welcome to DevOpsGuru
+
 ## 🌟 List of Jenkins CI/CD Projects
 
 ### 📋 Jenkins Overview
