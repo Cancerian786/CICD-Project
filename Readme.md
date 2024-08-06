@@ -1,7 +1,9 @@
-## LIST OF JENKINS CI/CD PROJECT
+## 🌟 List of Jenkins CI/CD Projects
 
-### Jenkins is an open source automation server that helps you to build and test your software projects continuously making. it easier for developers to integrate changes to the project, and making it easier for users to obtain a fresh build. It is a server-based system that runs in servlet containers such as Apache Tom.
+### 📋 Jenkins Overview
 
-#Below is the Project Name
+Jenkins is an open-source automation server that facilitates the continuous building and testing of software projects. It simplifies the integration of changes for developers and ensures users have access to fresh builds. Jenkins runs in servlet containers such as Apache Tomcat.
 
-#spring-boot-App
+## 📂 Project Name
+
+### 🚀 [Spring Boot App](https://github.com/Cancerian786/CICD-Project/tree/main/spring-Boot-App)
