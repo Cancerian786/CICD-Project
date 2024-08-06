@@ -7,3 +7,7 @@ Jenkins is an open-source automation server that facilitates the continuous buil
 ## 📂 Project Name
 
 ### 🚀 [Spring Boot App](https://github.com/Cancerian786/CICD-Project/tree/main/spring-Boot-App)
+
+### 🚀 [Spring Boot App (v2)](<https://github.com/Cancerian786/CICD-Project/tree/main/spring-boot-App%20(v2)>)
+
+### 🚀 [Spring Boot App (v3)](<https://github.com/Cancerian786/CICD-Project/tree/main/spring-boot-App%20(v3)>)
