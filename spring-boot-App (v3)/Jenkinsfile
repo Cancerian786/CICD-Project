@@ -2,32 +2,28 @@
 pipeline {
     agent any
     tools {
-        maven "MAVEN"
+        maven 'MAVEN'
     }
-
     stages {   
         stage('Checkout SCM') {
             steps {
                 checkout scm
             }
         }     
-
-        stage('test') {
+        stage('Test') {
             steps {
-               script {
+                script {
                     mavenTest()
                 }
             }
         }
-        
         stage('Build') {
             steps {
-               script {
+                script {
                     mavenBuild()
                 }
             }
         }
-
         stage('Deploy to Prod') {
             steps {
                 deploy adapters: [tomcat9(credentialsId: '160f6203-a1dc-4bdf-92c3-a9776e517949', path: '', url: 'http://192.168.1.9:8090')], contextPath: '/app', war: '**/*.war'
