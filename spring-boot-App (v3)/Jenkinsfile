@@ -6,15 +6,6 @@ pipeline {
     }
 
     stages {
-        stage('checkout from SCM') {
-            steps {
-                script {
-                    git()
-                }
-                
-            }
-        }
-        
         stage('test') {
             steps {
                script {
