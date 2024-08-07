@@ -5,7 +5,13 @@ pipeline {
         maven "MAVEN"
     }
 
-    stages {        
+    stages {   
+        stage('Checkout SCM') {
+            steps {
+                checkout scm
+            }
+        }     
+        
         stage('test') {
             steps {
                script {
