@@ -1,3 +1,4 @@
+@Library('library') _
 pipeline {
     agent any
     tools {
@@ -7,32 +8,26 @@ pipeline {
     stages {
         stage('checkout from SCM') {
             steps {
-                git branch: 'main', url: 'https://github.com/Cancerian786/Jenkins-CICD-Project'
+                script {
+                    git()
+                }
+                
             }
         }
         
         stage('test') {
             steps {
-                dir('spring-boot-App (v2)') {
-                    // Maven Test (mvn test)
-                    sh "mvn test"
+               script {
+                    mavenTest()
                 }
             }
         }
         
         stage('Build') {
             steps {
-                dir('spring-boot-App (v2)') {
-                    // Maven install (mvn install)
-                    sh "mvn package"
+               script {
+                    mavenBuild()
                 }
-                sh "ls spring-boot-war-example-1/target/"
-            }
-        }
-
-        stage('Deploy to Prod') {
-            steps {
-                deploy adapters: [tomcat9(credentialsId: '160f6203-a1dc-4bdf-92c3-a9776e517949', path: '', url: 'http://192.168.1.9:8090')], contextPath: '/app', war: '**/*.war'
             }
         }
     }
