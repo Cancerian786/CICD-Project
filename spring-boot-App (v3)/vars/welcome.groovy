@@ -1,5 +1,5 @@
 def call() {
-  sh 'echo Welcome to DevOpsWithWahid'
+  echo 'Welcome to DevOpsGuru'
 }
 
 
