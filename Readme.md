@@ -1,4 +1,4 @@
-![DevOpsGuru Banner](https://github.com/Cancerian786/CICD-Project/blob/main/Favicon/cicd.png)
+![DevOpsGuru Banner](https://github.com/Cancerian786/Favicon/blob/main/cicd.png)
 
 # 🎉 Welcome to DevOpsGuru
 
